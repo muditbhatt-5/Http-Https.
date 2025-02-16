@@ -2,28 +2,6 @@
 
 A reference guide for HTTP status codes with brief descriptions.
 
-<style>
-table th {
-  background-color: #07a2fe;
-  color: white;
-}
-
-table tr.code-2xx td {
-  background-color: #d4edda;
-}
-
-table tr.code-3xx td {
-  background-color: #d1ecf1;
-}
-
-table tr.code-4xx td {
-  background-color: #f8d7da;
-}
-
-table tr.code-5xx td {
-  background-color: #f5c6cb;
-}
-</style>
 
 ## Status Codes Overview
 
