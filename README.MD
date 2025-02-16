@@ -1,62 +1,66 @@
 # HTTP Status Codes
 
-A list of common HTTP status codes with their descriptions.
+A reference guide for HTTP status codes with brief descriptions.
 
-<table border="1" style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr style="background-color: #07a2fe; color: white;">
-      <th>Status Code</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>200 OK</td>
-      <td>The request was successful.</td>
-    </tr>
-    <tr>
-      <td>201 Created</td>
-      <td>The request was successful, and a resource was created.</td>
-    </tr>
-    <tr>
-      <td>204 No Content</td>
-      <td>The request was successful, but there is no content to return.</td>
-    </tr>
-    <tr>
-      <td>301 Moved Permanently</td>
-      <td>The requested resource has been moved to a new URL.</td>
-    </tr>
-    <tr>
-      <td>302 Found</td>
-      <td>The requested resource is temporarily located at a different URL.</td>
-    </tr>
-    <tr>
-      <td>400 Bad Request</td>
-      <td>The server could not understand the request due to invalid syntax.</td>
-    </tr>
-    <tr>
-      <td>401 Unauthorized</td>
-      <td>Authentication is required to access the resource.</td>
-    </tr>
-    <tr>
-      <td>403 Forbidden</td>
-      <td>The server understood the request but refuses to authorize it.</td>
-    </tr>
-    <tr>
-      <td>404 Not Found</td>
-      <td>The requested resource could not be found.</td>
-    </tr>
-    <tr>
-      <td>500 Internal Server Error</td>
-      <td>The server encountered an error and could not complete the request.</td>
-    </tr>
-    <tr>
-      <td>502 Bad Gateway</td>
-      <td>The server received an invalid response from an upstream server.</td>
-    </tr>
-    <tr>
-      <td>503 Service Unavailable</td>
-      <td>The server is not ready to handle the request (e.g., maintenance).</td>
-    </tr>
-  </tbody>
-</table>
+<style>
+table th {
+  background-color: #07a2fe;
+  color: white;
+}
+
+table tr.code-2xx td {
+  background-color: #d4edda;
+}
+
+table tr.code-3xx td {
+  background-color: #d1ecf1;
+}
+
+table tr.code-4xx td {
+  background-color: #f8d7da;
+}
+
+table tr.code-5xx td {
+  background-color: #f5c6cb;
+}
+</style>
+
+## Status Codes Overview
+
+| Status Code | Description                      |
+|-------------|----------------------------------|
+| **1xx**     | Informational responses          |
+
+### 2xx Success
+| Status Code | Description                      |
+|-------------|----------------------------------|
+| 200         | OK: The request succeeded.       |
+| 201         | Created: Resource created.       |
+| 202         | Accepted: Request accepted.      |
+| 204         | No Content: No content returned. |
+
+### 3xx Redirection
+| Status Code | Description                                |
+|-------------|--------------------------------------------|
+| 301         | Moved Permanently: Resource moved.         |
+| 302         | Found: Resource temporarily moved.         |
+| 304         | Not Modified: Cached version used.         |
+
+### 4xx Client Errors
+| Status Code | Description                                |
+|-------------|--------------------------------------------|
+| 400         | Bad Request: Invalid request.              |
+| 401         | Unauthorized: Authentication required.     |
+| 403         | Forbidden: Access is not allowed.          |
+| 404         | Not Found: Resource not found.             |
+| 429         | Too Many Requests: Rate limit exceeded.    |
+
+### 5xx Server Errors
+| Status Code | Description                                |
+|-------------|--------------------------------------------|
+| 500         | Internal Server Error: Generic server error. |
+| 501         | Not Implemented: Server does not support.  |
+| 502         | Bad Gateway: Invalid response from server. |
+| 503         | Service Unavailable: Server is overloaded. |
+
+This `README.md` file provides a quick reference for commonly used HTTP status codes. Adjust the table or descriptions as needed.
