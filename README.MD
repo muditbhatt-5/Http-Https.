@@ -41,4 +41,4 @@ A reference guide for HTTP status codes with brief descriptions.
 | 502         | Bad Gateway: Invalid response from server. |
 | 503         | Service Unavailable: Server is overloaded. |
 
-This `README.md` file provides a quick reference for commonly used HTTP status codes. Adjust the table or descriptions as needed.
+
